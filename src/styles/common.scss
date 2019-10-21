@@ -1,0 +1,24 @@
+.el__input_bg{
+  margin-right: 600px;
+  .el-input--medium,
+  .el-input__inner {
+    border-radius: 20px;
+    background: #888888;
+    border: none;
+    color: #333;
+    margin-right: 50px;
+  }
+}
+
+.el__breadcrumb_bg{
+  .el-breadcrumb__inner,
+  .el-breadcrumb__item:last-child{
+    color: #cccccc !important;
+    margin-right: 10px;
+  }
+
+  .el-breadcrumb__inner:hover{
+    color: white !important;
+  }
+}
+

@@ -9,7 +9,7 @@ module.exports = {
       "/api": {
         ws: false,
         // target就是请求接口的根路径
-        target: "https://api-m.mtime.cn",
+        target: " https://cnodejs.org/api/v1",
         changeOrigin: true,
         pathRewrite: {
           "^/api": ""

@@ -4,10 +4,14 @@ import router from "./router";
 import store from "./store/index";
 import axios from "axios";
 import http from "./http";
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+import dayjs from "dayjs";
+import lodash from "lodash";
 
 Vue.use(ElementUI);
+Vue.prototype.$dayjs=dayjs;
+Vue.prototype.$lodash=lodash;
 Vue.prototype.$axios = http;
 Vue.config.productionTip = false;
 
