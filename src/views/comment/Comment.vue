@@ -10,7 +10,9 @@
             <el-main>
               <router-view></router-view>
             </el-main>
-            <el-aside width="200px">Aside</el-aside>
+            <el-aside width="290px">
+              <Aside></Aside>
+            </el-aside>
           </el-container>
           <el-footer>
             <nav-footer></nav-footer>
@@ -24,11 +26,13 @@
 <script>
 import Top from "../../components/top/Top";
 import NavFooter from "../../components/footer/Footer";
+import Aside from "../../components/aside/Aside";
 export default {
   name: "Comment",
   components: {
     Top,
-    NavFooter
+    NavFooter,
+    Aside
   },
   props: {},
   data() {
@@ -45,7 +49,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#comment{
+#comment {
   width: 100%;
   height: 60px;
   background: #333333;
@@ -62,6 +66,9 @@ export default {
         width: 100%;
         height: 60px;
         background-color: #333333;
+        el-container {
+          width: 1095px;
+        }
       }
 
       .el-header {
